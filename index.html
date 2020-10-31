@@ -29,6 +29,50 @@
     .w3-half img:hover {
         opacity: 1
     }
+
+
+    .dropbtn {
+        background-color: #f44336;
+        color: white;
+        padding: 18px;
+        font-size: 18px;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 200px;
+        font-size: 14px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: white;
+        color: black;
+    }
 </style>
 
 <body>
@@ -42,20 +86,37 @@
             <h3 class="w3-padding-64"><b>Niche of<br>Knowledge</b></h3>
         </div>
         <div class="w3-bar-block">
+
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Month 1</button>
+                <div class="dropdown-content">
+                    <a href="#month1" onclick="w3_close()"> Knowledge of the weeks </a>
+                    <a href="#m1S" onclick="w3_close()"> Month Summary </a>
+                    <a href="#m1C" onclick="w3_close()"> Courses </a>
+                    <a href="#m1R" onclick="w3_close()"> Readings </a>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="dropdown">
+                <button class="dropbtn">Month 2</button>
+                <div class="dropdown-content">
+                    <a href="#month2" onclick="w3_close()"> Knowledge of the weeks </a>
+                </div>
+            </div>
+
+
+            <!--
+
+              Previous nav desing
             <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a>
             <a href="#month1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 1</a>
             <a href="#m1S" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 1 Summary</a>
             <a href="#m1C" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 1 Course</a>
             <a href="#m1R" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 1 Readings</a>
-
-            <!--
-
-                NAV ITEMS FROM OTHER MONTHS
-             <a href="#month2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 2</a>
-            <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 3</a>
-            <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 4</a>
-            <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 5</a>
-            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Month 6</a>
             -->
         </div>
     </nav>
@@ -2779,18 +2840,6 @@
             </ul>
         </div>
 
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption"></p>
-            </div>
-        </div>
-
-
-
         <!-- Header Month 1 Summary-->
         <div class="w3-container" style="margin-top:80px">
             <h1 class="w3-jumbo" id="m1S"><b>Month 1 Summary</b></h1>
@@ -2816,19 +2865,19 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>How to Talk to Anyone:</b> This reading had a bunch of good advice about how to
                 be better at talking. It may be something to learn how to talk but it is
                 something really necessary and after this talk, I see that I made a lot of
                 mistakes but now that I know that I can improve my speaking.
             </p>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>Ideas are just a multiplier of execution:</b> The thing that I take from this
                 lecture can be resumed with these words: “Talk less, do more”.
             </p>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>Missing semester - The Linux shell:</b> In this reading, I learn more about the
                 shell, first of all, I learn what is the shell and then I learn more about
@@ -2836,7 +2885,7 @@
                 use a shell so I installed one (git bash) and I am starting to use it more
                 just to feel more comfortable with it.
             </p>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>Religion, evolution, and the ecstasy of self-transcendence:</b> This ted talk
                 was really interesting to me, I have never had that vision of us(humans).
@@ -2848,7 +2897,7 @@
                 community And I really like the tip of how to get rid of the people that
                 just want to get carry for the team it was a pretty interesting one.
             </p>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>Creative thinking hacks:</b> This was a pretty interesting talk; I really like
                 how this dude sees creativity like something you can work on and not
@@ -2860,7 +2909,7 @@
                 have or not and by now I am going to start working on my own creativity
                 because it is something that is very important to have (at least for me).
             </p>
-            <br/>
+            <br />
             <h2 dir="ltr">
                 <b>Week 2 Summary</b>
             </h2>
@@ -2883,7 +2932,7 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>The Myth of the Genius Programmer:</b> To me the principal point of this talk
                 is to make you see that the perfect programmer doesn’t exist, there is no
@@ -2929,7 +2978,7 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>The Art of Organizational Manipulation:</b> This talk was really interesting
                 because it focused on how to behave in a company. And I must say that it is
@@ -2980,7 +3029,7 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>Developing Expertise:</b> From this talk I had like how is the path of becoming
                 an expert. We all start like a novice in the new things. We don't have to
@@ -3032,7 +3081,7 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>The power of an Agile Mindset:</b> I must say that the thing that I like the
                 most from this talk is the way she sees the goals. I feel that she sees
@@ -3072,7 +3121,7 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <h2 dir="ltr">
                 <b>Week 3 Summary</b>
             </h2>
@@ -3113,7 +3162,7 @@
                 real challenge to dominate it but it seems like it really payout once you
                 have dominated.
             </p>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>Version Control:</b> After this reading, I really understand a little better
                 how is that Git actually works and It makes me feel that a lot of things
@@ -3147,7 +3196,7 @@
                 even I think it would help me to be more creative at the moment in the
                 things or projects that I really want to work on.
             </p>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>La Mejor Presentación de tu Vida:</b> The following are the best tips that I
                 get from this video:
@@ -3214,7 +3263,7 @@
                 </li>
             </ul>
             <p dir="ltr">
-               <b> Quantum Computers Explained: </b> Important points of the video to remember:
+                <b> Quantum Computers Explained: </b> Important points of the video to remember:
             </p>
             <ul>
                 <li dir="ltr">
@@ -3326,7 +3375,7 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <h2 dir="ltr">
                 <b>Week 4 Summary</b>
             </h2>
@@ -3349,7 +3398,7 @@
                     </p>
                 </li>
             </ul>
-            <br/>
+            <br />
             <p dir="ltr">
                 <b>Richard Feynman:</b> This week I knew who Richard Feynman and I must say that I
                 would like to have known him before because he was pretty interesting and a
@@ -3436,9 +3485,9 @@
                 principally it will be easier to maintain the entire system.
             </p>
             <div>
-                <br/>
+                <br />
             </div>
-            
+
         </div>
 
         <!-- Header Month 1 Course-->
@@ -3447,7 +3496,7 @@
 
             <!-- Learning How to Learn-->
             <div class="w3-container" style="margin-top:80px">
-                <h1 class="w3-xxxlarge w3-text-red" id="m2w2"><b>Learning How To Learn</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Learning How To Learn</b></h1>
                 <hr style="width:50px;border:5px solid red" class="w3-round">
 
                 <p dir="ltr">
@@ -3802,7 +3851,7 @@
 
             <!-- Ego is the enemy reading-->
             <div class="w3-container" style="margin-top:80px">
-                <h1 class="w3-xxxlarge w3-text-red" id="m2w2"><b>Ego Is The Enemy</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Ego Is The Enemy</b></h1>
                 <hr style="width:50px;border:5px solid red" class="w3-round">
 
                 <p dir="ltr">
@@ -3917,7 +3966,7 @@
 
             <!-- Make It Stick reading-->
             <div class="w3-container" style="margin-top:80px">
-                <h1 class="w3-xxxlarge w3-text-red" id="m2w2"><b>Make It Stick</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Make It Stick</b></h1>
                 <hr style="width:50px;border:5px solid red" class="w3-round">
 
                 <p dir="ltr">
@@ -4020,7 +4069,333 @@
         </div>
 
 
+        <!-- Header Month 2-->
+        <div class="w3-container" style="margin-top:80px">
+            <h1 class="w3-jumbo" id="month2"><b>Month 2 Knowledge</b></h1>
+            <p><b><a href="#m2w1" onclick="w3_close()">M2 Week 1</a></b></p>
+            <p><b><a href="#m2w2" onclick="w3_close()">M2 Week 2</a></b></p>
+            <p><b><a href="#m2w3" onclick="w3_close()">M2 Week 3</a></b></p>
+            <p><b><a href="#m2w4" onclick="w3_close()">M2 Week 4</a></b></p>
 
+            <!-- M2 Weak 2 Title-->
+            <h1 class="w3-xxxlarge w3-text-red" id="m2w1"><b>M2 Week 1</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <!-- M1 Weak 2 Content-->
+        <div class="w3-container">
+            <p dir="ltr">
+                <b>Liskov Principle:</b> This is one of SOLID principles and it basically says
+                that the father classes should be able to be replaced by the sons without
+                breaking anything.
+            </p>
+            <p dir="ltr">
+                Another thing that you need to have in mind is that you have to make the
+                proper abstraction of the superclasses.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More Info:
+                        <a
+                            href="https://stackify.com/solid-design-liskov-substitution-principle/#:~:text=The%20Liskov%20Substitution%20Principle%20in,the%20objects%20of%20your%20superclass"
+                        >
+                            https://stackify.com/solid-design-liskov-substitution-principle/
+                        </a>
+                        .
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <img
+                    src="https://lh6.googleusercontent.com/fLFDfddQ8oQwH2oITK-UjOb7YkdHf3J95e-aiLG9XppxJGvM0K7g0UE2Ise-86DqkVOg85sABG2wHi5iUbutk-rra1NW1rwNGpyn_rIy5F3zcl3YHg_3-Wxjr0JzC_QbSv39YIPU"
+                    width="345"
+                    height="229"
+                />
+            </p>
+            <p dir="ltr">
+                “Not all ducks uses batteries”
+            </p>
+            <br/>
+            <p dir="ltr">
+                <b>Single Responsibility Principle:</b> This is one of SOLID principles and it
+                basically says that all the classes, methods, and functions should have
+                only 1 function.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More Info:
+                        <a
+                            href="https://mari-azevedo.medium.com/s-o-l-i-d-principles-what-are-they-and-why-projects-should-use-them-50b85e4aa8b6"
+                        >
+                            https://mari-azevedo.medium.com/s-o-l-i-d-principles
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>A good Unit Test:</b> These are the key qualities that a Unit Test should have:
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Does not depend on the environment: The unit test should be able to
+                        run on any machine.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Does not depend on other unit tests: A good unit test only depends
+                        on himself, this way is easier to detect where the problems are.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Does not depend on external data.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Does not have side effects: A test should play directly with the
+                        program. For example, the test should not be able to make some kind
+                        of transactions or send emails.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Assert the result of your code
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Test a single unit of work: Make sure that the test only covers a
+                        specific part of the program because in that way it is easier to
+                        make the changes that an error may require.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Cover all the paths of the code you want to test: Make sure to test
+                        every important thing in your program.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Test and assert edge cases: Try to run the test more than just one
+                        time and with different data.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Run fast: The tests will be run pretty often so make sure that they
+                        run fast.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Well-factored: Your tests should be easier to read and to
+                        understand.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More Info:
+                        <a
+                            href="https://www.kenneth-truyers.net/2012/12/15/key-qualities-of-a-good-unit-test/"
+                        >
+                            https://www.kenneth-truyers.net/key-qualities-of-a-good-unit-test/
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Java Annotations:</b> The java annotations are like some kind of etiquette that
+                you can put in your code to give metadata to a section of your code. These
+                annotations have multiple functions like:
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Compiler instructions
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Build-time instructions
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Runtime instructions
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More Info:
+                        <a href="http://tutorials.jenkov.com/java/annotations.html">
+                            http://tutorials.jenkov.com/java/annotations.html
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>JHIpster:</b> JHipster is a development platform that helps you with the
+                generation of code, develop, and deploy web applications and microservice
+                architectures. With JHipster you can generate the structure of your project
+                in a pretty simple way.
+            </p>
+            <p dir="ltr">
+                These are the technologies that JHipster support:
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Angular
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        React
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Vue
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Ionic
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        React Native
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Spring Boot
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Micronaut
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Quarkus
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Node.js
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+            More Info:            <a href="https://www.jhipster.tech">https://www.jhipster.tech</a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Timeboxing:</b> This is a pretty interesting way to do your work because here
+                you get rid of the to-do list and you change them into calendars.
+            </p>
+            <p dir="ltr">
+                The basic concept of this way of work is that you will structure your
+                calendar with the different task that you have to do, you will assign them
+                a day and an hour, in that way you will have more control of what you will
+                do at a certain time and just by reviewing your calendar you can easily see
+                what you have done in the past days, months, etc.
+            </p>
+            <p dir="ltr">
+                I will try this way of work for the next few weeks and see the results.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More Info:
+                        <a
+                            href="https://hbr.org/2018/12/how-timeboxing-works-and-why-it-will-make-you-more-productive"
+                        >
+                            https://hbr.org/2018/12/how-timeboxing-works
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>How to ask for help:</b> These are a set of steps to follow before asking for
+                help from your mentors:
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Write a good description of the dilemma
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Summarize the context, the problem, your opinion, and your
+                        thoughts.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        Try to predict what they will say and prepare for those possibles
+                        answers
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        If you have reached this point and you haven't found a solution now
+                        you are allowed to ask for help from your mentors.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More Info: <a href="https://sive.rs/ment">https://sive.rs/ment</a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Changelog:</b> The changelog is a file that you can have in your project. In
+                this file, you will put in chronological order all the changes that your
+                project has had.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More Info:
+                        <a
+                            href="https://www.freecodecamp.org/news/a-beginners-guide-to-git-what-is-a-changelog-and-how-to-generate-it/"
+                        >
+                            https://www.freecodecamp.org/changelog
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <p dir="ltr">
+                <img
+                    src="https://lh6.googleusercontent.com/0o9ayJXcUiUHXPY3vPWXbKZiGD0_zy6Nb4cMPnZ7UczdrKW7mfVy-pwDTXIQTOc02CexkdUI-A4-zkTKCY9EqV444FiFwGoj3woc2QWGo8rWYvLWkh5ryfsjFUIdAtM06wYeBiFk"
+                    width="450"
+                    height="510"
+                />
+            </p>
+            <p dir="ltr">
+                Example of a changelog
+            </p>
+            <br/>            
+        </div>
         <!-- End page content -->
     </div>
 
