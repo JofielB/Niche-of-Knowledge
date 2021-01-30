@@ -123,6 +123,8 @@
                 <button class="dropbtn">Month 4</button>
                 <div class="dropdown-content">
                     <a href="#month4" onclick="w3_close()"> Knowledge of the weeks </a>
+                    <a href="#m4S" onclick="w3_close()"> Month Summary </a>
+                    <a href="#m4R" onclick="w3_close()"> Readings </a>
                 </div>
             </div>
 
@@ -7290,6 +7292,597 @@
             </p>            
         </div>
 
+        <!-- M4 Weak 5 -->
+        <div class="w3-container">
+            <h1 class="w3-xxxlarge w3-text-red" id="m4w5"><b>M4 Week 5</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+
+            <p dir="ltr">
+                This week I had the opportunity to experience my first mock interview
+                before going with an interview with a client and I must say that it truly
+                helped me at acquiring a better idea of how an interview could be and how
+                prepared I am for it.
+            </p>
+            <p dir="ltr">
+                So this week I was mostly focused on preparing myself for the possibles
+                interviews with clients are coming, I studied many concepts that are
+                related to Spring Boot, API, REST, and Restful API because from what I have
+                seen it looks like Spring Boot, and Spring Framework are technologies that
+                are used a lot, so I decided to start learning more about them.
+            </p>
+            <p dir="ltr">
+                The following concepts are the ones I read and learned this week(All those
+                concepts are defined with my own words so I can come back in the future and
+                refresh them more naturally):
+            </p>
+            <p dir="ltr">
+                <b>H2 Database:</b> H2 is an open-source Java database that can be embedded in
+                Java applications or run in the client-server mode. The data that is stored
+                in an H2 is not persisting data and is mostly used for development and
+                testing.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a
+                            href="https://www.tutorialspoint.com/h2_database/h2_database_introduction.htm"
+                        >
+                            https://www.tutorialspoint.com/h2_database
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Type of Exceptions:</b> There are two types of exceptions in java; Built-in
+                Exceptions and User-Defined Exceptions. The Build-in Exceptions are the
+                ones that Java provides in its libraries, such as ArithmeticException,
+                ArrayIndexOutOfBoundsException, NullPointerException, and many others. The
+                User-Defined Exceptions are the ones that the user creates by himself.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        You can create an exception in Java by creating a class that
+                        extends from Exception, the father of all exceptions.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a
+                            href="https://www.geeksforgeeks.org/types-of-exception-in-java-with-examples/"
+                        >
+                            https://www.geeksforgeeks.org/types-of-exception-in-java
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Java Reflection:</b> Reflection is a feature from Java that allows you to
+                investigate how a Java class is made just by knowing the name of the class
+                (for example java.util.Scanner), you can know the methods, the variables,
+                and the constructors that the class.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a
+                            href="https://www.oracle.com/technical-resources/articles/java/javareflection.html"
+                        >
+                            https://www.oracle.com/java/javareflection.html
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Immutable Objects:</b> An immutable object is an object that can not change
+                after it is constructed, or looking at in another way, is an object whose
+                internal state remains constant after it has been entirely created. This
+                means that the public API of an immutable object guarantees us that it will
+                behave in the same way during its whole lifetime.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        A good way to secure that the states of an object will be immutable
+                        is by declaring final all its states.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        If you declare as final an object that only assures that the
+                        reference will not change.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="https://www.baeldung.com/java-immutable-object">
+                            https://www.baeldung.com/java-immutable-object
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>REST:</b> REST or REpresentational State Transfer is an architecture we can
+                follow to create a system that allows communication between different
+                machines, usually a server that stores some resources and a client that
+                make use of those resources.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        The communication is stateless, which means that the server does
+                        not need to know anything about what state the client is in and
+                        vice versa.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        The client sends a request to the server to retrieve or modify
+                        resources.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="https://www.codecademy.com/articles/what-is-rest">
+                            https://www.codecademy.com/articles/what-is-rest
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>HTTP Verbs:</b> HTTP has defined a set of methods you can use to interact with
+                a determinate resource and these methods are known as HTTP verbs. The most
+                common HTTP verbs are:
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        <b>GET:</b> Retrieve a specific resource (usually by id) or a collection
+                        of resources.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        <b>POST:</b> Create a new resource.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        <b>PUT:</b> Update a specific resource (usually by id).
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        <b>DELETE:</b> Remove a specific resource by id.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods">
+                            https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>JavaBean:</b> A JavaBean is a POJO (Plain Old Java Object) that follows these
+                conventions:
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        It should have a constructor without arguments
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        It should be serializable
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        The properties (variables) should be private.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        All their variables should have their getter and setter methods.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="https://www.baeldung.com/java-pojo-class">
+                            https://www.baeldung.com/java-pojo-class
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>HAL(Hypertext Application Language):</b> HAL is a format that allows encoding,
+                not just data but also hypermedia controls, alerting consumers to other
+                parts of the API they can navigate toward.
+            </p>
+            <p dir="ltr">
+                <img
+                    src="https://lh4.googleusercontent.com/77G4R18B4RELvmQlI-4cReLuvg60RKiUT_-h2dmCe_g7uyncWegmwiL1oaSl12AV372OFiBYhU-Wj2jaRfm_Bs2Die_MPW2enukqvSiTCXPTBaO45dx5F7mDlJJsQaCcLh9K1aKN"
+                    width="518"
+                    height="281"
+                />
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="http://stateless.co/hal_specification.html">
+                            http://stateless.co/hal_specification.html
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Spring Framework vs Spring Boot:</b>
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        <b>Spring Framework:</b> This is a framework that provides a comprehensive
+                        programming and configuration model for Java-based enterprise
+                        applications - on any kind of deployment platform.
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        <b>Spring Boot:</b> This is an extension of the Spring framework which
+                        eliminated the boilerplate configurations required for setting up a
+                        Spring application.
+                    </p>
+                </li>
+            </ul>
+            <p dir="ltr">
+                It takes an opinionated view of the Spring platform which paved the way for
+                a faster and more efficient development eco-system.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="https://www.baeldung.com/spring-vs-spring-boot">
+                            https://www.baeldung.com/spring-vs-spring-boot
+                        </a>
+                    </p>
+                </li>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="https://www.youtube.com/watch?v=Spzug_SjJnM">
+                            https://www.youtube.com/watch?v=Spzug_SjJnM
+                        </a>
+                    </p>
+                </li>
+            </ul>
+            <br/>
+            <p dir="ltr">
+                <b>Java EE(Enterprise Edition):</b> Java EE is a platform the which has a
+                collection of technologies and APIs for the Java platform designed to
+                support enterprise applications which can generally be classed as
+                large-scale, distributed, transactional, and highly-available applications
+                designed to support mission-critical business requirements.
+            </p>
+            <ul>
+                <li dir="ltr">
+                    <p dir="ltr">
+                        More info:
+                        <a href="https://docs.oracle.com/javaee/7/firstcup/java-ee001.htm">
+                            https://docs.oracle.com/javaee/7/firstcup/java-ee001.htm
+                        </a>
+                    </p>
+                </li>
+            </ul>            
+        </div>
+
+        <!-- Header Month 4 Summary-->
+        <div class="w3-container" style="margin-top:80px">
+            <h1 class="w3-jumbo" id="m4S"><b>Month 4 Summary</b></h1>
+            <p dir="ltr">
+                This the fourth month of the Academy program was focused on one thing: Our
+                personal brand. The main goal of this month was to prepare me to able to go
+                through and succeed in any technical interview process, and well I haven't
+                had yet the opportunity to go through a real technical interview yet so I
+                can not tell with certainty that I reached the goal but I can assure that I
+                feel a lot more prepared than at the beginning of this month.
+            </p>
+            <p dir="ltr">
+                The first week of the month I was on reading some of the chapters from the
+                Cracking The Code Interview book and I must say that I learned and pull out
+                too many good things about that book, such as, what soft skills I need to
+                take care of for an interview, how to create a pretty good resume, how to
+                talk about me and my experience, how to gain experience, and even how to
+                ask questions, but all these things are just a little glimpse of what
+                Cracking The Code Interview has to offer.
+            </p>
+            <p dir="ltr">
+                In the second week of this month, I had the opportunity to apply some of
+                the advice that I read from Cracking The Code Interview because this week I
+                have a little interview. I must say that going through this interview
+                helped me to have a better idea of how my performance in an interview is,
+                it helped me to realize what things I need to put more attention to.
+            </p>
+            <p dir="ltr">
+                With a better idea of how to create a resume (thanks to cracking the code
+                interview book) the third week I was mainly focused on creating my own
+                resume, and thanks to that I was able to learn how to describe and talk
+                about the experience I have and what I have to offer to a company. I must
+                say that the tips I read from the book really helped me with this task.
+            </p>
+            <p dir="ltr">
+                For the last week of the month, I had the opportunity to experience my
+                first mock interview before going with an interview with a client and I
+                must say that it truly helped me at acquiring a better idea of how an
+                interview could be and how prepared I am for it. Another of the things that
+                I was focused on this week was my technical knowledge, mostly talking about
+                the backend technologies.I studied many concepts that are related to Spring
+                Boot, API, REST, and Restful API because from what I have seen it looks
+                like Spring Boot, and Spring Framework are technologies that are used a
+                lot, so I decided to start learning about them.
+            </p>
+            <p dir="ltr">
+                I can say that this month was a pretty good experience because I truly feel
+                more prepared for any type of interview I could have in the future, there
+                are still some things that I can improve but now I am aware of them, and
+                thanks to that I can take care of it.
+            </p>
+            <div>
+                <br/>
+            </div>            
+        </div>
+
+        <!-- Month 4 Readings-->
+        <div class="w3-container" style="margin-top:80px">
+            <!--Header Month 1 Readings-->
+            <h1 class="w3-jumbo" id="m4R"><b>Month 1 Readings</b></h1>
+
+            <!-- Cracking the code reading-->
+            <div class="w3-container" style="margin-top:80px">
+                <h1 class="w3-xxxlarge w3-text-red"><b>Cracking The Code Interview</b></h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+
+                <p dir="ltr">
+                    For me, Cracking the Interview is like a guide that will help you to go
+                    through a coding interview and come out as a winner.
+                </p>
+                <p dir="ltr">
+                    From my point of view, this book is not a normal one, it is not a book you
+                    can just sit down, and read while you take the bus. I have felt that this
+                    book can be used more as a guide of what you need to learn to be ready for
+                    an interview, and not only the programming knowledge you should have but
+                    also the way you should behave in an interview.
+                </p>
+                <p dir="ltr">
+                    I truly believe that the best approach to this book is by looking at the
+                    topics, identify the ones that you feel you need to practice, and tackle
+                    those chapters, at least that’s the way I am intending to use it.
+                </p>
+                <p dir="ltr">
+                    Without further due, I will list all the takeaways I have had from this
+                    book:
+                </p>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Skills needed for an interview: Analytical Skills, coding skills.
+                            technical knowledge/computer science fundamentals, experience, and
+                            culture fit/communication skills.
+                        </p>
+                    </li>
+                    <ul>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Analytical skills: Did you need much help solving the problem?
+                                How optimal was your solution?.
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Coding skills: Were you able to successfully translate your
+                                algorithms to reasonable code? Was it clean? Did you think
+                                about potential errors?
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Technical knowledge / Computer science fundamentals: Do you
+                                have a strong foundation in computer science and the relevant
+                                technologies?
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Experience: Have you made a good technical decision in the
+                                past? Have you built interesting, challenging projects?
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Culture fit / Communication skills: Do your personality and
+                                values fit with the company and team? Did you communicate well
+                                with your interviewer?
+                            </p>
+                        </li>
+                    </ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Get Experience: “Without a great resume, there’s no interview. And
+                            without great experience, there’s no great resume”. These are good
+                            ways to get the experience that will enrich your resume:
+                        </p>
+                    </li>
+                    <ul>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Get an internship: Many of the top tech companies have
+                                internship programs designed especially for freshmen and
+                                sophomores. You can also look at startups, which might be more
+                                flexible.
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Start Something: Build a project on your own time, participate
+                                in hackathons, or contribute to an open-source project.
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                User Your Nights and Weekends: If you have some free time, use
+                                it to build a mobile app, a web app, or a piece of desktop
+                                software.
+                            </p>
+                        </li>
+                    </ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Write a Great Resume: “Resume screeners look for the same things
+                            that interviewers do. They want to know that you are smart and that
+                            you can code”. These are some aspects you must have in mind while
+                            making your resume:
+                        </p>
+                    </li>
+                    <ul>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Length: 1 page if you have less than 10 years experience, 1.5 -
+                                2 pages if you have more than 10 years experience.
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Employment History: Your resume should not include a full
+                                history of every role you have ever had. Include only the
+                                relevant positions, the ones that make you a more impressive
+                                candidate.
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Projects: 2 - 4 most significant projects (Open-source,
+                                independent projects).
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Languages: List most of the languages you have used, but add
+                                your experience level. Example:
+                            </p>
+                        </li>
+                    </ul>
+                </ul>
+                <p dir="ltr">
+                    Languages: Java(expert) / C++(proficient) / JS(Prior experience)
+                </p>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Grammar: “Some companies will throw out your resume just because of
+                            a typo. Please get at least one native English speaker to proofread
+                            your resume”.
+                        </p>
+                    </li>
+                </ul>
+                <br/>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            How to answer questions: One of the best ways to answer is by the
+                            S.A.R. (Situation, Action, Result) approach. This approach means
+                            that you start by outlining the situation, then explaining the
+                            actions you took, and lastly, describing the result.
+                        </p>
+                    </li>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Tell me about yourself: Many interviewers kick off the session by
+                            asking you to tell them a bit about yourself. This is essentially a
+                            pitch. It is your interviewer´s first impression so is very
+                            important to know how to answer this question. A good structure to
+                            answer that question would be the following one:
+                        </p>
+                    </li>
+                    <ul>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Current Role [Headline Only]
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                College
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Post College &amp; Onwards
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Current Role [Details]
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Outside of Work (Side projects)
+                            </p>
+                        </li>
+                        <li dir="ltr">
+                            <p dir="ltr">
+                                Wrap up
+                            </p>
+                        </li>
+                    </ul>
+                </ul>
+                <br/>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">
+                            Baseline Knowledge:
+                        </p>
+                    </li>
+                </ul>
+                <p dir="ltr">
+                    <img
+                        src="https://lh4.googleusercontent.com/Os5RCTTD5xxA__RYHLH2ud9hxoQ9n3htXIQg_UU1B0iuXfgSRDJl6vPz113Bo1y0NYjH2kdl3GMPzNqjw3Alxuho02y5b4V1Glk8tcPqr9QmO15gdtP6o2zmPYpxq9piuqUJccfI"
+                        width="589"
+                        height="208"
+                    />
+                </p>
+                <br/>
+                <p dir="ltr">
+                    Those are the more relevant topics or things that I get from this first
+                    reading of the book but Cracking the Code Interview has a lot more to offer
+                    and I am sure that I am gonna not just gonna use it this time, I gonna use
+                    it every time that I want to land a new job, where an interview is needed.
+                </p>
+                <div>
+                    <br/>
+                </div>                
+            </div>
+        </div>
+        
         <!-- End page content -->
     </div>
 
